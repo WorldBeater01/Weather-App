@@ -1,0 +1,31 @@
+{
+    "name": "Weather App",
+    "short_name": "Weather",
+    "start_url": ".",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background": "#ccc",
+    "theme_color": "#56CC9D",
+    "icons": [
+        {
+            "src": "src/images/icons/icons-96.png",
+            "sizes":"96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "src/images/icons/icons-144.png",
+            "sizes":"144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "src/images/icons/icons-256.png",
+            "sizes":"256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "src/images/icons/icons-512.png",
+            "sizes":"512x512",
+            "type": "image/png"
+        }
+    ]
+}

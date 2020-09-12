@@ -1,0 +1,205 @@
+/* RESET STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+    --bg_main: #0a1f44;
+    --light: #fff;
+    --text_med: #53627c;
+    --text_dark: #1e2432;
+    --red: #ff1e42;
+    --darkred: #c3112d;
+    --orange: #ff8c00;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+  }
+  button{
+    cursor: pointer;
+  }
+  input {
+    -webkit-appearance: none;
+  }
+   
+  button,
+  input {
+    background: none;
+    outline: none;
+    color: inherit;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  body {
+    font: 1rem/1.3 "Roboto", sans-serif;
+    color: var(--text_dark);
+    padding: 50px;
+    background-size: cover;
+  }
+header{
+  text-transform: uppercase;
+  letter-spacing: 0.02rem;
+  position: absolute;
+  top:30px;
+}
+header h1{
+  font-size:1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* SECTION #1
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.top-banner {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.top-banner h1{
+  font-size: 2.5rem;
+}
+.top-banner form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding:10px;
+}
+.top-banner form input {
+  font-size:1.0rem;
+  height:39px;
+  width:350px;
+  padding:5px 5px 5px;
+  border-radius: 5px;
+  border-right: none;
+  border-color: #daf0ff;
+  background-color:#fff;
+}
+.top-banner form button {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  padding: 5px 10px;
+  margin-left:-10px;
+  border-radius: 5px;
+  border-left: none;
+  border-color: rgb(54, 236, 236);
+  background: rgb(54, 236, 236);
+  transition: background 0.3s ease-in-out;
+}
+.top-banner form button:hover {
+  background: rgb(35, 207, 207);
+}
+.top-banner form .msg {
+  position: absolute;
+  top:225px;
+  max-width: 450px;
+  min-height: 40px;
+}
+.color-change{
+  color:rgba(236, 238, 243, 1);
+}
+/* SECTION #2
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.ajax-section {
+  margin: 70px 0 20px;
+}
+#content {
+  max-width:700px;
+  height: 350px;
+  margin:auto;
+}
+.card-body{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  margin:20px auto;
+  height: 305px;
+  max-width:480px;
+  border-radius:20px;
+  box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.1);
+  background-color:#fff;
+	}
+.card-body h4{
+  font-size:1.4rem;
+  letter-spacing: 0.04rem;
+}
+.lower-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.ajax-section .city-name sup {
+  font-size:0.8rem;
+  padding: 0.2em 0.35em;
+  border-radius: 30px;
+  background: var(--orange);
+}
+.city-temp{
+  display: flex;
+}
+.city-temp h5{
+  font-size:3.5rem;
+  margin-bottom:40px;
+}
+.city-temp sup{
+  font-size:1.5rem;
+}
+.fig-description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+   top:-10px;
+}
+.fig-description img{
+  margin-top: 10px;
+  width: 150px;
+  height: 150px;
+}
+.fig-description figcaption{
+  font-size:1rem;
+  letter-spacing: 0.05;
+  text-transform: uppercase;
+  margin-top: -5px;
+  font-weight: bold;
+  color:rgb(128, 128, 128);
+}
+
+.foot{
+  text-align: right;
+}
+
+/* MQ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (max-width: 770px) {
+  body{
+    padding:30px;
+    
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  body{
+    padding:15px;
+  }
+  .top-banner form{
+   justify-content: flex-start;
+   margin-left:-10px;
+  }
+  .top-banner form input{
+    width:220px;
+  }
+  .msg{
+    font-size:0.8rem;
+    margin-top:20px;
+  }
+  
+}
